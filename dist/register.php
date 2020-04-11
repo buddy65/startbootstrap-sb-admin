@@ -1,83 +1,127 @@
-<?php
-// REGISTER USER
+<?php include('server.php') ?>
 
-if (isset($_POST['reg_user'])) {
+<!DOCTYPE html>
 
-// receive all input values from the form
+<html lang="en">
 
-$username = mysqli_real_escape_string($db, $_POST['username']);
+<head>
 
-$email = mysqli_real_escape_string($db, $_POST['email']);
+ <meta charset="utf-8">
 
-$password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-$password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-// form validation: ensure that the form is correctly filled ...
+ <meta name="description" content="">
 
-// by adding (array_push()) corresponding error unto $errors array
+ <meta name="author" content="">
 
-if (empty($username)) { array_push($errors, "Username is required"); }
+ <title>SB Admin - Start Bootstrap Template</title>
 
-if (empty($email)) { array_push($errors, "Email is required"); }
+ <!-- Bootstrap core CSS-->
 
-if (empty($password_1)) { array_push($errors, "Password is required"); }
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-if ($password_1 != $password_2) {
+ <!-- Custom fonts for this template-->
 
-array_push($errors, "The two passwords do not match");
+ <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-}
+ <!-- Custom styles for this template-->
 
-// first check the database to make sure
+ <link href="css/sb-admin.css" rel="stylesheet">
 
-// a user does not already exist with the same username and/or email
+</head>
 
-$user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
+<body class="bg-dark">
 
-$result = mysqli_query($db, $user_check_query);
+ <div class="container">
 
-$user = mysqli_fetch_assoc($result);
+   <div class="card card-register mx-auto mt-5">
 
-if ($user) { // if user exists
+     <div class="card-header">Register an Account</div>
 
-if ($user['username'] === $username) {
+     <div class="card-body">
 
-array_push($errors, "Username already exists");
+       <form method="post" action="register.php">
 
-}
+         <?php include('errors.php'); ?>
 
-if ($user['email'] === $email) {
+         <div class="form-group">
 
-array_push($errors, "email already exists");
+           <div class="form-row">
 
-}
+             <div class="col-md-12">
 
-}
-//ins
-// Finally, register user if there are no errors in the form
+               <label for="exampleInputName">Username</label>
 
-if (count($errors) == 0) {
+               <input class="form-control" id="exampleInputName" type="text"   name="username" value="<?php echo $username; ?>" >
 
-$password = md5($password_1);//encrypt the password before saving in the database
+             </div>
 
-echo $password ;
+           </div>
 
-$query = "INSERT INTO users(username, email, password)
+         </div>
 
-VALUES('$username', '$email', '$password')";
+         <div class="form-group">
 
-mysqli_query($db, $query);
+           <label for="exampleInputEmail1">Email address</label>
 
-$_SESSION['username'] = $username;
+           <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" name="email" value="<?php echo $email; ?>" >
 
-$_SESSION['success'] = "You are now logged in";
+         </div>
 
-header('location: login.php');
+         <div class="form-group">
 
-}
+           <div class="form-row">
 
-}
+             <div class="col-md-6">
 
-// ...
-?>
+               <label for="exampleInputPassword1">Password</label>
+
+               <input class="form-control" id="exampleInputPassword1" type="password" name="password_1" >
+
+             </div>
+
+            <div class="col-md-6">
+
+               <label for="exampleInputPassword1">Confirm Password</label>
+
+               <input class="form-control" id="exampleInputPassword2" type="password" name="password_2" >
+
+             </div>
+
+           </div>
+
+         </div>
+
+          <button type="submit" class="btn btn-primary btn-block" name="reg_user">Register</button>
+
+       </form>
+
+       <div class="text-center">
+
+         <a class="d-block small mt-3" href="login.php">Login Page</a>
+
+       <!--- <a class="d-block small" href="forgot-password.html">Forgot Password?</a>-->
+
+       </div>
+
+     </div>
+
+   </div>
+
+ </div>
+
+ <!-- Bootstrap core JavaScript-->
+
+ <script src="vendor/jquery/jquery.min.js"></script>
+
+ <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Core plugin JavaScript-->
+
+ <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>
