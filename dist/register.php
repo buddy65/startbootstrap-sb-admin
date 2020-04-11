@@ -54,7 +54,7 @@ array_push($errors, "email already exists");
 }
 
 }
-ins
+//ins
 // Finally, register user if there are no errors in the form
 
 if (count($errors) == 0) {

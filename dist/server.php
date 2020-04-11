@@ -80,7 +80,7 @@ $_SESSION['username'] = $username;
 
 $_SESSION['success'] = "You are now logged in";
 
-header('location: server.php');
+header('location: login.php');
 
 }
 
