@@ -80,3 +80,4 @@ header('location: login.php');
 }
 
 // ...
+?>
