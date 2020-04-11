@@ -326,7 +326,7 @@ $username = "root";
 
 $password = "";
 
-$dbname = "registration";
+$dbname = "template";
 
 // Create connection
 
@@ -520,7 +520,7 @@ $username = "root";
 
 $password = "";
 
-$dbname = "registration";
+$dbname = "template";
 
 // Create connection
 
@@ -658,7 +658,7 @@ $username = "root";
 
 $password = "";
 
-$dbname = "registration";
+$dbname = "template";
 
 // Create connection
 
