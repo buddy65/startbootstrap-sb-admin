@@ -15,28 +15,18 @@
  <meta name="description" content="">
 
  <meta name="author" content="">
-
- <title>SB Admin - Start Bootstrap Template</title>
-
- <!-- Bootstrap core CSS-->
-
- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
- <!-- Custom fonts for this template-->
-
- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
- <!-- Custom styles for this template-->
-
- <link href="css/sb-admin.css" rel="stylesheet">
-
+ <title>Page Title - CS2300 Store Manager</title>
+ <link href="css/styles.css" rel="stylesheet" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
-
-<body class="bg-dark">
-
- <div class="container">
-
-   <div class="card card-register mx-auto mt-5">
+<body class="bg-primary">
+ <div id="layoutAuthentication">
+     <div id="layoutAuthentication_content">
+         <main>
+             <div class="container">
+                 <div class="row justify-content-center">
+                     <div class="col-lg-7">
+                         <div class="card shadow-lg border-0 rounded-lg mt-5">
 
      <div class="card-header">Register an Account</div>
 
