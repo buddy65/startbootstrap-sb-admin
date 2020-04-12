@@ -93,17 +93,11 @@
 
 </ul>
 
-
-
-<li class="nav-item">
-
-<a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-
-<i class="fa fa-fw fa-sign-out"></i>Logout</a>
-
-</li>
-
-</ul>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+    <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="login.html">Logout</a>
+</div>
 
 </div>
 
