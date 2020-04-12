@@ -196,7 +196,7 @@
 <div class="container-fluid">
 
 <!-- Breadcrumbs-->
-
+<main>
 <ol class="breadcrumb">
 
 <li class="breadcrumb-item">
@@ -630,7 +630,7 @@ echo '0 results';
 }
 
 ?>
-
+</main>
 </table>
 
 </div>
