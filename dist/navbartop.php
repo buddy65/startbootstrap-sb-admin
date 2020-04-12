@@ -15,9 +15,9 @@
 
     </li>
 
-    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Products">
 
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" href="product.php">
 
     <i class="fa fa-check-square"></i>
 
@@ -27,7 +27,7 @@
 
     </li>
 
-    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Users">
 
     <a class="nav-link" href="register.php">
 
@@ -38,7 +38,6 @@
     </a>
 
     </li>
-
 
     <ul class="navbar-nav ml-auto ml-md-0">
         <li class="nav-item dropdown">
