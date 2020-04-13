@@ -27,7 +27,7 @@
 
 <div class="card-header">
 
-<i class="fa fa-table"></i> Data Table Example</div>
+<i class="fa fa-table"></i> Products</div>
 
 <div class="card-body">
 
@@ -45,7 +45,7 @@
 
 <th>Price of Product</th>
 
-<th>Product Catrogy</th>
+<th>Product Category</th>
 
 <th>Product Details</th>
 
@@ -63,7 +63,7 @@
 
 <th>Price of Product</th>
 
-<th>Product Catrogy</th>
+<th>Product Category</th>
 
 <th>Product Details</th>
 
