@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<?php include('standardheader.php') ?>
 <?php $_SESSION = array(); ?>
+<?php include('standardheader.php') ?>
+
 <body class="bg-primary">
 
     <div class="container">
