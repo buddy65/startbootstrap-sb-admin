@@ -148,7 +148,9 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 </td>
 
 <td>
-  <?php echo "edit" ?>
+  <a class="nav-link" href="editproduct.php">
+    <span class="nav-link-text">edit</span>
+  </a>
 </td>
 
 <td>
