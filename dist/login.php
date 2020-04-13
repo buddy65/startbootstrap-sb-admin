@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<?php $_SESSION = array(); ?>
+<?php session_start(); $_SESSION = array(); ?>
 <?php include('standardheader.php') ?>
 
 <body class="bg-primary">
