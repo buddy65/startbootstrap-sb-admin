@@ -49,6 +49,9 @@
 
 <th>Product Details</th>
 
+<th>Edit</th>
+
+<th>Delete</th>
 </tr>
 
 </thead>
@@ -67,6 +70,9 @@
 
 <th>Product Details</th>
 
+<th>Edit</th>
+
+<th>Delete</th>
 </tr>
 
 </tfoot>
@@ -139,6 +145,14 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 
 <?php echo $row['product_details']; ?>
 
+</td>
+
+<td>
+  <?php echo "edit" ?>
+</td>
+
+<td>
+  <?php echo "delete" ?>
 </td>
 
 </tr>
