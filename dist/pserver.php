@@ -34,7 +34,7 @@ die("Connection failed: " . $conn->connect_error);
 
 $sql = "INSERT INTO products (product_name,product_price,product_cat,product_details)
 
-VALUES ('$pname', '$price', '$pcat','product_details')";
+VALUES ('$pname', '$price', '$pcat','$product_details')";
 
 if ($conn->query($sql) === TRUE) {
 
