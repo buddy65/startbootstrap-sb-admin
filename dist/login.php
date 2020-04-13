@@ -5,7 +5,7 @@
 <html lang="en">
 
 <?php include('standardheader.php') ?>
-
+<?php $_SESSION = array(); ?>
 <body class="bg-primary">
 
     <div class="container">
