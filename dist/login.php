@@ -4,76 +4,70 @@
 
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <title>Page Title - CS2300 Store Manager</title>
-  <link href="css/styles.css" rel="stylesheet" />
- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-</head>
+<?php include('standardheader.php')
 
-<body class="bg-dark">
+<body class="bg-primary">
 
- <div class="container">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5">
+                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                    <div class="card-body">
 
-   <div class="card card-login mx-auto mt-5">
+                      <form method="post" action="login.php">
 
-     <div class="card-header">Login</div>
+                         <?php include('errors.php'); ?>
 
-     <div class="card-body">
+                        <div class="form-group">
 
-       <form method="post" action="login.php">
+                          <label for="exampleInputEmail1">Username</label>
 
-          <?php include('errors.php'); ?>
+                          <input class="form-control"  type="text" name="username">
 
-         <div class="form-group">
+                        </div>
 
-           <label for="exampleInputEmail1">Username</label>
+                        <div class="form-group">
 
-           <input class="form-control"  type="text" name="username">
+                          <label for="exampleInputPassword1">Password</label>
 
-         </div>
+                          <input class="form-control"  type="password" name="password">
 
-         <div class="form-group">
+                        </div>
 
-           <label for="exampleInputPassword1">Password</label>
+                        <div class="form-group">
 
-           <input class="form-control"  type="password" name="password">
+                          <div class="form-check">
 
-         </div>
+                            <label class="form-check-label">
 
-         <div class="form-group">
+                              <input class="form-check-input" type="checkbox"> Remember Password</label>
 
-           <div class="form-check">
+                          </div>
 
-             <label class="form-check-label">
+                        </div>
 
-               <input class="form-check-input" type="checkbox"> Remember Password</label>
+                        <button type="submit" class="btn btn-primary btn-block" name="login_user">Login</button>
 
-           </div>
+                      </form>
 
-         </div>
+                      <div class="text-center">
 
-         <button type="submit" class="btn btn-primary btn-block" name="login_user">Login</button>
+                        <a class="d-block small mt-3" href="register.php">Register an Account</a>
 
-       </form>
+                     <!-- <a class="d-block small" href="forgot-password.php">Forgot Password?</a>-->
 
-       <div class="text-center">
+                      </div>
 
-         <a class="d-block small mt-3" href="register.php">Register an Account</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        <div class="small"><a href="register.php">Register Account</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <!-- <a class="d-block small" href="forgot-password.php">Forgot Password?</a>-->
-
-       </div>
-
-     </div>
-
-   </div>
-
- </div>
 
  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
